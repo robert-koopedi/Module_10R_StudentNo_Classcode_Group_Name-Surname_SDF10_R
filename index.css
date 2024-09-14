@@ -1,4 +1,111 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+    max-width: 320px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.541);
+}
+
+#input-field {
+    box-sizing: border-box;
+    font-size: 20px;
+    background-color: whitesmoke;
+    border: none;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#input-field:hover {
+    background-color: #e0e0e0;
+}
+
+#add-button {
+    background-color: rgba(255, 94, 0, 0.733);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin: 10px ;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#add-button:hover {
+    background-color: rgb(255, 94, 0);
+}
+
+img {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 100%;
+    max-width: 200px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+li {
+    padding: 8px 0;
+    box-shadow: rgba(212, 7, 7, 0.747);
+    border:1px solid black;  
+    border-radius: 5px;
+    background-color:rgba(120, 140, 200, 0.432);
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+}
+
+#shopping-list .empty {
+    text-align: center;
+    color: #888;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#shopping-list li:hover {
+    background-color:rgba(101, 140, 250, 0.700);
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 5px; 
+        padding: 15px; 
+    }
+
+    img {
+        max-width: 120px;
+    }
+
+    #input-field, #add-button {
+        font-size: 16px; 
+        padding: 10px; 
+    }
 }
